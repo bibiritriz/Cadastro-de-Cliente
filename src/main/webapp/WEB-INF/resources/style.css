@@ -1,0 +1,128 @@
+* {
+  font-family: "Inter",
+    sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #EEEFE0;
+}
+
+.form{
+  background-color: #A7C1A8;
+  border-radius: 0.5rem;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input{
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  display: flex;
+  gap: 0.5rem;
+  font-size: medium;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+input[type="date"] {
+  padding: 0.33rem;
+  color: gray;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1{
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+input{
+  border: none;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+}
+
+.botoes{
+  margin-top: 0.8rem;
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+button{
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #222831;
+}
+
+.salvar{
+  background-color: #7fc56c;
+  &:hover {
+    background-color: #5ec034;
+  }
+}
+
+.atualizar{
+  background-color: #FFE162;
+  &:hover {
+    background-color: #F9D923;
+  }
+}
+
+.excluir{
+  background-color: #FF6464;
+  &:hover {
+    background-color: #F93827;
+  }
+}
+
+.mensagem-container{
+  margin: auto;
+  width: fit-content;
+  max-width: 29%;
+}
+
+.erro{
+  background-color: #e93424;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.sucesso{
+  background-color: #7fc56c;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}

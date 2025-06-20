@@ -6,9 +6,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import br.gov.sp.fatec.itu.controle_clientes.models.Cliente;
 
+@Repository
 public class ClienteDAO implements ICrudDAO<Cliente> {
+  @Autowired
   private DatabaseConnection realizarConexao;
 
   public ClienteDAO(DatabaseConnection realizarConexao) {
